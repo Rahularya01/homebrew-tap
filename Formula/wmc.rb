@@ -1,16 +1,16 @@
 class Wmc < Formula
   desc "Clean downloaded WhatsApp media on macOS"
   homepage "https://github.com/Rahularya01/wmc"
-  version "0.4.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Rahularya01/wmc/releases/download/v0.4.0/wmc-aarch64-apple-darwin.tar.gz"
-      sha256 "a31c6b0018636a211a40c892879e6c4390749a94fe202c66137c8eb732a9c511"
+      url "https://github.com/Rahularya01/wmc/releases/download/v0.6.0/wmc-aarch64-apple-darwin.tar.gz"
+      sha256 "dd68bf995690d7b459092366ecac0702546211752ca544f1d4fecb9329f4baa8"
     else
-      url "https://github.com/Rahularya01/wmc/releases/download/v0.4.0/wmc-x86_64-apple-darwin.tar.gz"
-      sha256 "84100aa3a569cbc80d00d0f4d7945caf1670c2e5e95a6bdc6d47a24a8e86ae55"
+      url "https://github.com/Rahularya01/wmc/releases/download/v0.6.0/wmc-x86_64-apple-darwin.tar.gz"
+      sha256 "b054e478cdc2e9c71b61ac06ec70882f0993c4004bd8116752d9cb3b99733587"
     end
   end
 
