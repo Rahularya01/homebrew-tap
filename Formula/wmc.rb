@@ -1,16 +1,16 @@
 class Wmc < Formula
   desc "Clean downloaded WhatsApp media on macOS"
   homepage "https://github.com/Rahularya01/wmc"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Rahularya01/wmc/releases/download/v0.6.0/wmc-aarch64-apple-darwin.tar.gz"
-      sha256 "dd68bf995690d7b459092366ecac0702546211752ca544f1d4fecb9329f4baa8"
+      url "https://github.com/Rahularya01/wmc/releases/download/v0.7.0/wmc-aarch64-apple-darwin.tar.gz"
+      sha256 "5f1275b6ae2648043ecb438c4d8d9e7e10c51512079089b6b8faa32030ec1283"
     else
-      url "https://github.com/Rahularya01/wmc/releases/download/v0.6.0/wmc-x86_64-apple-darwin.tar.gz"
-      sha256 "b054e478cdc2e9c71b61ac06ec70882f0993c4004bd8116752d9cb3b99733587"
+      url "https://github.com/Rahularya01/wmc/releases/download/v0.7.0/wmc-x86_64-apple-darwin.tar.gz"
+      sha256 "7c525608adf1df4f73f8b792bf29982aeea1ca7b3f1c807f3e31dec90163041d"
     end
   end
 
@@ -19,6 +19,6 @@ class Wmc < Formula
   end
 
   test do
-    assert_match "USAGE:", shell_output("#{bin}/wmc --help")
+    assert_match "Usage:", shell_output("#{bin}/wmc --help")
   end
 end
